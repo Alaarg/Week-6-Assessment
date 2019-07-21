@@ -38,8 +38,26 @@ Ex: addKeyPowerIndex(arrOfObj2)
 ]   
 */
 
-function addKeyPowerIndex() {
+var arrOfObj1 = [{
+    a: 12
+  },
+  {
+    b: 5
+  },
+  {
+    c: 16
+  },
+  {
+    d: 4
+  },
+  {
+    e: 3
+  }
+]
+
+function addKeyPowerIndex(newarr) {
   // WRITE YOUR CODE UNDER THIS LINE  
+
 
 }
 
@@ -57,18 +75,21 @@ and return a new array after will decrease this number
 from each element in this array
 
 var arrOfNum1 = [77,5,33]
-Ex: decreseBy(arrOfnum1,10)
+Ex: decreseBy(arrOfNum1,10)
 => [67,-5,23]
 
 Ex: decreseBy(arrOfNum1,-6)
 => [83, 11, 39]
 */
+var array1 = [77, 5, 33, 50, 10];
 
-function decreseBy() {
+function decreseBy(z) {
   // WRITE YOUR CODE UNDER THIS LINE 
-
+  var arry = array1.map(x => x - z);
+  return arry
 }
-
+console.log(decreseBy(10));
+// expected output: Array [2, 8, 18, 32]
 
 
 
